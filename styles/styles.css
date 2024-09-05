@@ -57,6 +57,10 @@ section {
     background: var(--dark-green);
 }
 
+.btn:active {
+    background: var(--dark-green);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -191,6 +195,11 @@ header > .container, .header-localization, .header-nav-list {
     color: var(--accent-green);
 }
 
+.header-menu-localization-lang:nth-child(1) .header-menu-localization-lang-button:active,
+.header-menu-localization-lang:nth-child(3) .header-menu-localization-lang-button:active {
+    color: var(--dark-green);
+}
+
 
 .header-menu-phone-text {
     font-weight: 500;
@@ -216,6 +225,14 @@ header > .container, .header-localization, .header-nav-list {
     color: var(--accent-green);
     fill: var(--accent-green);
     stroke: var(--accent-green);
+}
+
+.header-menu-phone:active .header-menu-phone-text,
+.header-menu-phone:active .header-menu-phone-icon,
+.header-menu-phone:active .header-menu-phone-icon > path {
+    color: var(--dark-green);
+    fill: var(--dark-green);
+    stroke: var(--dark-green);
 }
 
 /* Header menu */
@@ -266,6 +283,10 @@ header > .container, .header-localization, .header-nav-list {
     color: var(--accent-green);
 }
 
+.header-nav-list-item-link:active {
+    color: var(--dark-green);
+}
+
 .header-localization {
     width: 11%;
     margin: 0 auto;
@@ -291,6 +312,11 @@ header > .container, .header-localization, .header-nav-list {
 .header-localization-lang:nth-child(1) .header-localization-lang-button:hover,
 .header-localization-lang:nth-child(3) .header-localization-lang-button:hover {
     color: var(--accent-green);
+}
+
+.header-localization-lang:nth-child(1) .header-localization-lang-button:active,
+.header-localization-lang:nth-child(3) .header-localization-lang-button:active {
+    color: var(--dark-green);
 }
 
 .header-phone {
@@ -321,6 +347,14 @@ header > .container, .header-localization, .header-nav-list {
     color: var(--accent-green);
     fill: var(--accent-green);
     stroke: var(--accent-green);
+}
+
+.header-phone:active .header-phone-text,
+.header-phone:active .header-phone-icon,
+.header-phone:active .header-phone-icon > path {
+    color: var(--dark-green);
+    fill: var(--dark-green);
+    stroke: var(--dark-green);
 }
 
 

@@ -364,7 +364,7 @@ footer {
     font-size: 1rem;
 }
 
-.footer-top-services-list-item, .footer-top-contacts-list-item {
+.footer-top-services-list-item, .footer-top-contacts-list-item, .footer-top-contacts-list-item span {
     font-weight: 400;
     font-size: 1.125rem;
     color: #e8e8e8;

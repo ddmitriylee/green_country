@@ -256,6 +256,15 @@
     opacity: 0;
   }
 
+  .services-cards-card:focus::after, .services-cards-card:focus .services-card-hidden {
+    opacity: 1;
+  }
+  
+  .services-cards-card:focus .services-card-title,
+  .services-cards-card:focus .services-card-link {
+    opacity: 0;
+  }
+
 .services-cards-card:nth-child(1) {
     background: url('../images/service1.jpg') no-repeat;
     background-size: cover;

@@ -1,0 +1,107 @@
+:root {
+    --accent-green: #2c833d;
+    --white: #fff;
+    --dark-gray: #535353;
+    --light-gray: #c4c4c4;
+    --main-black: #292929;
+}
+
+/* Header */
+
+header {
+    position: static;
+}
+
+/* Hero  */
+
+.sect-hero {
+    background: url('../images/contacts.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 120px 0 147px 0;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 74px;
+    color: var(--white);
+}
+
+/* Contacts */
+
+.sect-contacts .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-left {
+    width: 24%;
+}
+
+table {
+    width: 100%;
+    vertical-align: middle;
+}
+
+tr:not(:last-child) td {
+    padding-bottom: 45px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 23px;
+    color: var(--main-black);
+    width: 100%;
+}
+
+tr td span {
+    font-size: 1rem;
+    color: #888888;
+    padding-bottom: 15px;
+}
+
+tr td:first-child {
+    padding-right: 15px;
+    text-align: right;
+}
+
+
+#map {
+    width: 72%;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    .hero-title {
+        max-width: 100%;
+        font-size: 3rem;
+    }
+
+    .sect-contacts .container {
+        flex-direction: column;
+    }
+
+    tr td:first-child {
+        padding-right: 15px;
+        max-width: 20%;
+        text-align: right;
+    }
+
+    .contacts-left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    #map {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 2.25rem;
+        line-height: 48px;
+    }
+
+    
+}

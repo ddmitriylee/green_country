@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Country</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <script defer src="../index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-menu">
+            <div class="container">
+                <a class="header-menu-logo-link" href="../index.html">
+                    <img class="header-logo-img" src="../images/logo.png" alt="Logo">
+                </a>
+                <nav class="header-menu-nav">
+                    <ul class="header-menu-nav-list">
+                        <li class="header-menu-nav-list-item">
+                            <a class="header-menu-nav-list-item-link" href="waste.html">ВЫВОЗ И СОРТИРОВКА СО</a>
+                        </li>
+                        <li class="header-menu-nav-list-item">
+                            <a class="header-menu-nav-list-item-link" href="tbo.html">ВЫВОЗ ТБО</a>
+                        </li>
+                        <li class="header-menu-nav-list-item">
+                            <a class="header-menu-nav-list-item-link" href="contacts.html">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-menu-localization">
+                    <li class="header-menu-localization-lang">
+                        <a class="header-menu-localization-lang-button" href="">КАЗ</a>
+                    </li>
+                    <li class="header-menu-localization-lang">
+                        <a class="header-menu-localization-lang-button" href="">RUS</a>
+                    </li>
+                    <li class="header-menu-localization-lang">
+                        <a class="header-menu-localization-lang-button" href="">ENG</a>
+                    </li>
+                </ul>
+                <div class="header-menu-phone">
+                    <a href="tel:+77777707070" class="header-menu-phone-text">
+                        <svg class="header-menu-phone-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7071 11.7071L16.3552 14.3552C16.7113 14.7113 16.7113 15.2887 16.3552 15.6448C14.43 17.57 11.3821 17.7866 9.20399 16.153L7.62857 14.9714C5.88504 13.6638 4.33622 12.115 3.02857 10.3714L1.84701 8.79601C0.213407 6.61788 0.430014 3.56999 2.35523 1.64477C2.71133 1.28867 3.28867 1.28867 3.64477 1.64477L6.29289 4.29289C6.68342 4.68342 6.68342 5.31658 6.29289 5.70711L5.27175 6.72825C5.10946 6.89054 5.06923 7.13846 5.17187 7.34373C6.35853 9.71706 8.28294 11.6415 10.6563 12.8281C10.8615 12.9308 11.1095 12.8905 11.2717 12.7283L12.2929 11.7071C12.6834 11.3166 13.3166 11.3166 13.7071 11.7071Z" stroke="white"/>
+                        </svg>     
+                        +7 (777) 770-70-70
+                    </a>
+                </div>
+                <button id="close_menu" class="header-menu-burger">
+                    <svg width="45" height="45" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
+                        <path fill="#fff" d="m82 87.883c1.625 1.625 4.2656 1.625 5.8906 0 1.6289-1.6289 1.6289-4.2656 0-5.8945l-32.414-32.41 32.406-32.406c1.6289-1.625 1.6289-4.2656 0-5.8906-1.6289-1.6289-4.2656-1.6289-5.8906 0l-32.406 32.402-32.406-32.406c-1.625-1.625-4.2656-1.625-5.8906 0-1.6289 1.6289-1.6289 4.2656 0 5.8945l32.402 32.406-32.41 32.414c-1.6289 1.625-1.6289 4.2617 0 5.8906 1.625 1.6289 4.2656 1.6289 5.8906 0l32.414-32.414z" fill-rule="evenodd"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <a class="header-logo-link" href="../index.html">
+                <img class="header-logo-img" src="../images/logo.png" alt="Logo">
+            </a>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="waste.html">ВЫВОЗ И СОРТИРОВКА СО</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="tbo.html">ВЫВОЗ ТБО</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-item-link" href="contacts.html">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="header-localization">
+                <li class="header-localization-lang">
+                    <a class="header-localization-lang-button" href="">КАЗ</a>
+                </li>
+                <li class="header-localization-lang">
+                    <a class="header-localization-lang-button" href="">RUS</a>
+                </li>
+                <li class="header-localization-lang">
+                    <a class="header-localization-lang-button" href="">ENG</a>
+                </li>
+            </ul>
+            <div class="header-phone">
+                <a href="tel:+77777707070" class="header-phone-text">
+                    <svg class="header-phone-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7071 11.7071L16.3552 14.3552C16.7113 14.7113 16.7113 15.2887 16.3552 15.6448C14.43 17.57 11.3821 17.7866 9.20399 16.153L7.62857 14.9714C5.88504 13.6638 4.33622 12.115 3.02857 10.3714L1.84701 8.79601C0.213407 6.61788 0.430014 3.56999 2.35523 1.64477C2.71133 1.28867 3.28867 1.28867 3.64477 1.64477L6.29289 4.29289C6.68342 4.68342 6.68342 5.31658 6.29289 5.70711L5.27175 6.72825C5.10946 6.89054 5.06923 7.13846 5.17187 7.34373C6.35853 9.71706 8.28294 11.6415 10.6563 12.8281C10.8615 12.9308 11.1095 12.8905 11.2717 12.7283L12.2929 11.7071C12.6834 11.3166 13.3166 11.3166 13.7071 11.7071Z" stroke="white"/>
+                    </svg>     
+                    +7 (777) 770-70-70
+                </a>
+            </div>
+            <button id="open_menu" class="header-burger">
+                <svg width="45" height="45" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path fill="#fff" d="m 14.000002,968.36217 c -3.3137,0 -6,2.68619 -6,6 0,3.31359 2.6863,6 6,6 l 71.999996,0 c 3.3137,0 6,-2.68641 6,-6 0,-3.31381 -2.6863,-6 -6,-6 z m 0,28.00003 c -3.3137,0 -6,2.6862 -6,6 0,3.3136 2.6863,6 6,6 l 71.999996,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z m 0,28 c -3.3137,0 -6,2.6862 -6,6 0,3.3136 2.6863,6 6,6 l 71.999996,0 c 3.3137,0 6,-2.6864 6,-6 0,-3.3138 -2.6863,-6 -6,-6 z" style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" fill="#000000" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="sect-hero">
+            <div class="container">
+                <h1 class="hero-title">КОНТАКТЫ</h1>
+            </div>
+        </section>
+        <section class="sect-contacts">
+            <div class="container">
+                <div class="contacts-left">
+                    <table>
+                        <tr>
+                            <td>                    
+                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="37" height="37" rx="18.5" fill="#2C833D"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5858 13.5858C11 14.1716 11 15.1144 11 17V21.5C11 23.3857 11 24.3285 11.5858 24.9143C12.1716 25.5 13.1144 25.5 15 25.5H22.5794C24.4651 25.5 25.4079 25.5 25.9937 24.9143C26.5794 24.3285 26.5794 23.3857 26.5794 21.5001V17C26.5794 15.1144 26.5794 14.1716 25.9937 13.5858C25.4079 13 24.4651 13 22.5794 13H15C13.1144 13 12.1716 13 11.5858 13.5858ZM14.1635 15.7474C13.7084 15.4345 13.0858 15.5497 12.7729 16.0047C12.4599 16.4598 12.5751 17.0824 13.0302 17.3953L17.6567 20.5771C18.3393 21.0465 19.2407 21.0465 19.9233 20.5771L24.5498 17.3953C25.0048 17.0824 25.12 16.4598 24.8071 16.0047C24.4941 15.5497 23.8715 15.4345 23.4165 15.7474L18.79 18.9292L14.1635 15.7474Z" fill="white"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <span>Пишите нам: </span><br>qurmet.pro@mail.ru
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>              
+                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="36" height="36" rx="18" fill="#98B19C"/>
+                                    <rect width="37" height="37" rx="18.5" fill="#2C833D"/>
+                                    <path d="M12.6796 10.3204L13.2929 9.70711C13.6834 9.31658 14.3166 9.31658 14.7071 9.70711L17.2929 12.2929C17.6834 12.6834 17.6834 13.3166 17.2929 13.7071L15.5005 15.4995C15.2016 15.7984 15.1275 16.255 15.3165 16.6331C16.4093 18.8186 18.1814 20.5907 20.3669 21.6835C20.745 21.8725 21.2016 21.7984 21.5005 21.4995L23.2929 19.7071C23.6834 19.3166 24.3166 19.3166 24.7071 19.7071L27.2929 22.2929C27.6834 22.6834 27.6834 23.3166 27.2929 23.7071L26.6796 24.3204C24.5683 26.4317 21.2257 26.6693 18.837 24.8777L17.6286 23.9714C15.885 22.6638 14.3362 21.115 13.0286 19.3714L12.1223 18.163C10.3307 15.7743 10.5683 12.4317 12.6796 10.3204Z" fill="white"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <span>Звоните нам:</span><br>+7 (777) 770-70-70 <br>+7 (771) 771-77-77
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="37" height="37" rx="18.5" fill="#2C833D"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3799 14.0031C17.9701 14.0031 16.8273 15.197 16.8273 16.6698C16.8273 18.1426 17.9701 19.3365 19.3799 19.3365C20.7896 19.3365 21.9324 18.1426 21.9324 16.6698C21.9324 15.197 20.7896 14.0031 19.3799 14.0031ZM19.3813 10C22.8957 10 25.7626 13.1702 25.7626 17.1046C25.7626 19.3915 23.8653 22.2779 19.7832 25.6701L19.3813 26C15.0217 22.4647 13 19.4652 13 17.1046C13 13.1702 15.867 10 19.3813 10Z" fill="white"/>
+                                </svg>    
+                            </td>
+                            <td>
+                                <span>Приходите к нам: </span><br>Астана, район Нура, пр. Кабанбай батыра 11/5, офис 1202
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <img class="footer-logo" src="../images/logo.png" width="183" height="86.85" alt="Logo">
+                <div class="footer-top-services">
+                    <h4 class="footer-top-services-title">Услуги</h4>
+                    <ul class="footer-top-services-list">
+                        <li class="footer-top-services-list-item">
+                            Вывоз и сортировка со
+                        </li>
+                        <li class="footer-top-services-list-item">
+                            Вывоз тбо
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-contacts">
+                    <h4 class="footer-top-contacts-title">Контакты:</h4>
+                    <ul class="footer-top-contacts-list">
+                        <li class="footer-top-contacts-list-item">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3899 23.8536C15.1881 22.248 20.3669 17.1681 20.3669 11.9166C20.3669 7.72843 16.9717 4.33325 12.7835 4.33325C8.59537 4.33325 5.2002 7.72843 5.2002 11.9166C5.2002 17.1681 10.3789 22.248 12.1771 23.8536C12.5277 24.1666 13.0394 24.1666 13.3899 23.8536ZM12.7835 15.1666C14.5785 15.1666 16.0335 13.7115 16.0335 11.9166C16.0335 10.1217 14.5785 8.66659 12.7835 8.66659C10.9886 8.66659 9.53353 10.1217 9.53353 11.9166C9.53353 13.7115 10.9886 15.1666 12.7835 15.1666Z" fill="#2C833D"/>
+                            </svg>
+                            Астана, район Нура, пр. Кабанбай батыра 11/5, офис 1202
+                        </li>
+                        <li class="footer-top-contacts-list-item">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.67962 1.32038L3.29289 0.707107C3.68342 0.316583 4.31658 0.316582 4.70711 0.707106L7.29289 3.29289C7.68342 3.68342 7.68342 4.31658 7.29289 4.70711L5.50048 6.49952C5.2016 6.7984 5.1275 7.255 5.31653 7.63307C6.40929 9.81858 8.18142 11.5907 10.3669 12.6835C10.745 12.8725 11.2016 12.7984 11.5005 12.4995L13.2929 10.7071C13.6834 10.3166 14.3166 10.3166 14.7071 10.7071L17.2929 13.2929C17.6834 13.6834 17.6834 14.3166 17.2929 14.7071L16.6796 15.3204C14.5683 17.4317 11.2257 17.6693 8.83698 15.8777L7.62857 14.9714C5.88504 13.6638 4.33622 12.115 3.02857 10.3714L2.12226 9.16302C0.330722 6.7743 0.568269 3.43173 2.67962 1.32038Z" fill="#2C833D"/>
+                            </svg>
+                            <span>+7 (777) 770-70-70</span>
+                            <span>+7 (771) 771-77-77</span>
+                        </li>
+                        <li class="footer-top-contacts-list-item">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.30014 7.4039C5.71436 7.98969 5.71436 8.9325 5.71436 10.8181V14.6553C5.71436 16.5409 5.71436 17.4838 6.30014 18.0695C6.88593 18.6553 7.82874 18.6553 9.71436 18.6553H16.3249C18.2105 18.6553 19.1533 18.6553 19.7391 18.0695C20.3249 17.4838 20.3249 16.5409 20.3249 14.6553V10.8181C20.3249 8.9325 20.3249 7.98969 19.7391 7.4039C19.1533 6.81812 18.2105 6.81812 16.3249 6.81812H9.71436C7.82874 6.81812 6.88593 6.81812 6.30014 7.4039ZM8.43464 9.78957C8.20782 9.63206 7.89626 9.68824 7.73875 9.91505C7.58124 10.1419 7.63743 10.4534 7.86424 10.6109L12.164 13.5969C12.6785 13.9541 13.3607 13.9541 13.8752 13.5969L18.175 10.6109C18.4018 10.4534 18.458 10.1419 18.3005 9.91505C18.143 9.68824 17.8314 9.63206 17.6046 9.78957L13.3048 12.7755C13.1333 12.8946 12.9059 12.8946 12.7344 12.7755L8.43464 9.78957Z" fill="#2C833D"/>
+                            </svg>
+                            qurmet.pro@mail.ru
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>ABC DESIGN</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script defer>
+        var map = L.map('map').setView([51.140356785426995, 71.41510931788196], 16);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        L.marker([51.140356785426995, 71.41510931788196]).addTo(map)
+    </script>
+</body>
+</html>
